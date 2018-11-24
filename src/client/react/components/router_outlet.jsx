@@ -8,6 +8,7 @@ import TodoAppContainer from "./todo_app/todo_app_container";
 import MessagesContainer from "./messages/messages_container";
 import MessageContainer from "./message/message_container";
 import LoginContainer from "./login/login_container";
+import StripeContainer from "./stripe/stripe_container";
 
 function RouterOutlet({ isAuthenticated, location: { pathname } }) {
   const redirectToLogin = !isAuthenticated && pathname !== "/login";
@@ -23,6 +24,7 @@ function RouterOutlet({ isAuthenticated, location: { pathname } }) {
           <Route path="/messages" component={MessagesContainer} />
           <Route path="/message/:id" component={MessageContainer} />
           <Route path="/login" component={LoginContainer} />
+          <Route path="/stripe" component={StripeContainer} />
         </React.Fragment>
       }
     </React.Fragment>

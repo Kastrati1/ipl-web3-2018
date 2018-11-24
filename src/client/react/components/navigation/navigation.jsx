@@ -16,6 +16,7 @@ const Navigation = ({ logout, theme }) => {
           <Nav.Link as={Link} to="/todo" >Todo</Nav.Link>
           <Nav.Link as={Link} to="/messages" >Messages</Nav.Link>
           <Nav.Link as={Link} to="/login" >Login</Nav.Link>
+          <Nav.Link as={Link} to="/stripe" >Stripe</Nav.Link>
         </Nav>
        <SearchForm />
        <Button variant="outline-warning" onClick={ logout }>Logout</Button>
