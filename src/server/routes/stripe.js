@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-/*const stripe = require('stripe')(sk_test_nmpN1YJZZG07AOib8pRAsS71);
+
+const stripe = require("stripe")("sk_test_nmpN1YJZZG07AOib8pRAsS71");
 
 router.post('/', function(req, res, next) {
     return stripe.charges
@@ -12,6 +13,6 @@ router.post('/', function(req, res, next) {
         description: 'Test payment',
       })
       .then(result => res.status(200).json(result));
-});*/
+});
 
 module.exports = router;

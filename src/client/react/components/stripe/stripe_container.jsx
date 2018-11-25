@@ -27,7 +27,7 @@ class StripeContainer extends React.Component {
   }
 
   donate(amount){
-    const url = `/api/doPayment/`;
+    const url = `/api/stripe/`;
     sendApiRequest({ url })
       .then((message) => {
         this.setState({
