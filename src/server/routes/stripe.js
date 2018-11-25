@@ -3,7 +3,7 @@ var router = express.Router();
 
 /*const stripe = require('stripe')(sk_test_nmpN1YJZZG07AOib8pRAsS71);
 
-routeur.post('/', (req, res) => {
+router.post('/', function(req, res, next) {
     return stripe.charges
       .create({
         amount: req.body.amount, // Unit: cents
